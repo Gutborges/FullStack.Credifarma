@@ -3,7 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Credifarma.API", "Credifarma.API\Credifarma.API.csproj", "{86959FD9-81A1-42C1-9D4A-2135488FA49D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Dominio", "0 - Dominio", "{1E45C927-5EA3-44FE-8F4E-68A918F8C37A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Tests", "1 - Tests", "{CE6F28AD-EA79-4F30-8CCF-8EDD8B9C6411}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Infra", "2 - Infra", "{0B67920A-48F8-484A-AC9A-69853DE17C01}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - API", "3 - API", "{1F6868B4-7368-4371-9AA9-9B9DAF75BA8B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Presentation", "4 - Presentation", "{D62BD0C2-4C00-4C20-8A83-1271C972A296}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Credifarma.API", "Credifarma.API\Credifarma.API.csproj", "{6A5FE35E-B0FC-4D9C-8603-5BEBA583932E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Credifarma.Dominio", "Credifarma.Dominio\Credifarma.Dominio.csproj", "{5C5CCE45-CCDF-4DCC-931B-5346F47B6E85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Credifarma.Infra", "Credifarma.Infra\Credifarma.Infra.csproj", "{5F705D6B-EB5B-4899-9007-305672D23E34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Credifarma.MVC", "Credifarma.MVC\Credifarma.MVC.csproj", "{DD268187-0AA6-4193-8BAB-E3ED6F7D7B77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +27,31 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{86959FD9-81A1-42C1-9D4A-2135488FA49D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{86959FD9-81A1-42C1-9D4A-2135488FA49D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{86959FD9-81A1-42C1-9D4A-2135488FA49D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{86959FD9-81A1-42C1-9D4A-2135488FA49D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A5FE35E-B0FC-4D9C-8603-5BEBA583932E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A5FE35E-B0FC-4D9C-8603-5BEBA583932E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A5FE35E-B0FC-4D9C-8603-5BEBA583932E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A5FE35E-B0FC-4D9C-8603-5BEBA583932E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C5CCE45-CCDF-4DCC-931B-5346F47B6E85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C5CCE45-CCDF-4DCC-931B-5346F47B6E85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C5CCE45-CCDF-4DCC-931B-5346F47B6E85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C5CCE45-CCDF-4DCC-931B-5346F47B6E85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F705D6B-EB5B-4899-9007-305672D23E34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F705D6B-EB5B-4899-9007-305672D23E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F705D6B-EB5B-4899-9007-305672D23E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F705D6B-EB5B-4899-9007-305672D23E34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD268187-0AA6-4193-8BAB-E3ED6F7D7B77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD268187-0AA6-4193-8BAB-E3ED6F7D7B77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD268187-0AA6-4193-8BAB-E3ED6F7D7B77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD268187-0AA6-4193-8BAB-E3ED6F7D7B77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6A5FE35E-B0FC-4D9C-8603-5BEBA583932E} = {1F6868B4-7368-4371-9AA9-9B9DAF75BA8B}
+		{5C5CCE45-CCDF-4DCC-931B-5346F47B6E85} = {1E45C927-5EA3-44FE-8F4E-68A918F8C37A}
+		{5F705D6B-EB5B-4899-9007-305672D23E34} = {0B67920A-48F8-484A-AC9A-69853DE17C01}
+		{DD268187-0AA6-4193-8BAB-E3ED6F7D7B77} = {D62BD0C2-4C00-4C20-8A83-1271C972A296}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B342A28D-A866-425B-8C44-5FECD3E8887D}
