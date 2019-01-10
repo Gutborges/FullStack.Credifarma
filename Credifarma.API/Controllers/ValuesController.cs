@@ -14,6 +14,7 @@ namespace Credifarma.API.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
+            var t = 0;
             return new string[] { "value1", "value2" };
         }
 
